@@ -79,7 +79,8 @@ sudo dnf install -y \
 	neovim \
 	flatpak \
 	discord \
-	xdg-user-dirs
+	xdg-user-dirs \
+	PackageKit-command-not-found
 
 # Install Qtile
 sudo dnf install -y \

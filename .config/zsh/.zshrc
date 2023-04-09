@@ -18,3 +18,7 @@ alias "ls"="ls -lA"
 alias "dotfiles"="git --git-dir=$HOME/Linux/dotfiles/ --work-tree=$HOME"
 
 source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+source "$ZDOTDIR/zsh-history-substring-search.zsh"
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down

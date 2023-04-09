@@ -25,6 +25,7 @@ git --git-dir=$HOME/Linux/dotfiles/ --work-tree=$HOME add \
 ~/Linux/fedora.sh \
 ~/.config/nvim/init.vim \
 ~/.config/zsh/zsh-vim-mode.plugin.zsh \
+~/.config/zsh/zsh-history-substring-search.zsh \
 ~/.local/share/fonts/* \
 ~/.local/share/themes/* \
 ~/.config/Code/User/settings.json
