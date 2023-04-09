@@ -1,0 +1,76 @@
+configuration {
+  font: "JetBrainsMono Nerd Font Regular 10";
+  icon-theme: "Papirus";
+  drun {
+    display-name: "";
+  }
+
+  run {
+    display-name: "";
+  }
+
+  window {
+    display-name: "";
+  }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
+}
+
+@import "launcher_colors.rasi"
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;   
+
+  background-color: @background;
+  text-color: @foreground;
+}
+
+window {
+  transparency: "real";
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  background-color: @background-alt;
+  children: [prompt, entry];
+}
+
+entry {
+  background-color: inherit;
+  padding: 12px 3px;
+}
+
+prompt {
+  background-color: inherit;
+  padding: 12px;
+}
+
+listview {
+  lines: 8;
+}
+
+element {
+  children: [element-icon, element-text];
+}
+
+element-icon {
+  padding: 10px 10px;
+}
+
+element-text {
+  padding: 10px 0;
+  text-color: @foreground-alt;
+}
+
+element-text selected {
+  text-color: @foreground;
+}

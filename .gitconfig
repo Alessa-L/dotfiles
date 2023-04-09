@@ -1,0 +1,8 @@
+[user]
+	name = Alessa L
+	email = alessa.code.fnrcz@slmail.me
+[core]
+	editor = nvim
+	pager = less -F
+[init]
+    defaultBranch = main
