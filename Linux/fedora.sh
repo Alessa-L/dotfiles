@@ -76,7 +76,6 @@ sudo dnf install -y \
 	xfce4-notifyd \
 	zsh \
 	zsh-syntax-highlighting \
-	zsh-autosuggestions \
 	neovim \
 	flatpak \
 	discord \
