@@ -28,4 +28,5 @@ git --git-dir=$HOME/Linux/dotfiles/ --work-tree=$HOME add \
 ~/.config/zsh/zsh-history-substring-search.zsh \
 ~/.local/share/fonts/* \
 ~/.local/share/themes/* \
-~/.config/Code/User/settings.json
+~/.config/Code/User/settings.json \
+~/Linux/disable_usb_wakeup.conf

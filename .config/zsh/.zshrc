@@ -7,6 +7,8 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
 
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 source "$ZDOTDIR/zsh-vim-mode.plugin.zsh"
 MODE_CURSOR_VIINS="steady bar"
 

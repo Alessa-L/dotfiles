@@ -76,6 +76,7 @@ sudo dnf install -y \
 	xfce4-notifyd \
 	zsh \
 	zsh-syntax-highlighting \
+	zsh-autosuggestions \
 	neovim \
 	flatpak \
 	discord \
@@ -110,6 +111,9 @@ git clone https://github.com/Alessa-L/dotfiles
 find dotfiles -print0 | xargs -0 mv -t .
 sudo cp /home/$USER/Linux/slick-greeter.conf /etc/lightdm/
 sudo cp /home/$USER/Media/Images/Wallpaper.jpg /usr/share/backgrounds/
+
+# Disable USB wakeup
+sudo cp Linux/disable_usb_wakeup.conf /etc/tmpfiles.d/disable_usb_wakeup.conf
 
 # Set the xfce/qtile session
 xfconf-query -c xfce4-session -p /sessions/Failsafe/Client0_Command -t string -sa xfsettingsd
