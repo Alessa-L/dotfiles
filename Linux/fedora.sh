@@ -26,7 +26,6 @@ done
 # Install media codecs
 sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
 sudo dnf install -y lame\* --exclude=lame-devel
-sudo dnf group upgrade -y --with-optional Multimedia
 
 # Install packages
 sudo dnf install -y \
@@ -91,9 +90,9 @@ sudo dnf install -y \
 pip install qtile
 
 # Install AppImages
-wget -P ~/.local/bin/ https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage
-wget -P ~/.local/bin/ https://github.com/FreeTubeApp/FreeTube/releases/download/v0.18.0-beta/FreeTube_0.18.0_amd64.AppImage
-wget -P ~/.local/bin/ https://github.com/bitwarden/clients/releases/download/desktop-v2023.3.2/Bitwarden-2023.3.2-x86_64.AppImage
+wget -P $HOME/.local/bin/ https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage
+wget -P $HOME/.local/bin/ https://github.com/FreeTubeApp/FreeTube/releases/download/v0.18.0-beta/FreeTube_0.18.0_amd64.AppImage
+wget -P $HOME/.local/bin/ https://github.com/bitwarden/clients/releases/download/desktop-v2023.3.2/Bitwarden-2023.3.2-x86_64.AppImage
 
 # Add flathub and install flatpaks
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -106,13 +105,13 @@ dnf check-update
 sudo dnf install -y code
 
 # Install my configurations
-git clone https://github.com/Alessa-L/dotfiles
-find dotfiles -print0 | xargs -0 mv -t .
-sudo cp /home/$USER/Linux/slick-greeter.conf /etc/lightdm/
-sudo cp /home/$USER/Media/Images/Wallpaper.jpg /usr/share/backgrounds/
-
-# Disable USB wakeup
-sudo cp Linux/disable_usb_wakeup.conf /etc/tmpfiles.d/disable_usb_wakeup.conf
+mkdir $HOME/Linux
+git --git-dir=$HOME/Linux/dotfiles --work-tree=$HOME init
+git --git-dir=$HOME/Linux/dotfiles --work-tree=$HOME config --local status.showUntrackedFiles no
+git --git-dir=$HOME/Linux/dotfiles --work-tree=$HOME pull https://github.com/Alessa-L/dotfiles
+sudo cp $HOME/Linux/slick-greeter.conf /etc/lightdm/
+sudo cp $HOME/Media/Images/Wallpaper.jpg /usr/share/backgrounds/
+sudo cp $HOME/Linux/disable_usb_wakeup.conf /etc/tmpfiles.d/disable_usb_wakeup.conf
 
 # Set the xfce/qtile session
 xfconf-query -c xfce4-session -p /sessions/Failsafe/Client0_Command -t string -sa xfsettingsd
