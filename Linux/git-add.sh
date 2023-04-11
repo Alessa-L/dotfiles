@@ -16,6 +16,8 @@ git --git-dir=$HOME/Linux/dotfiles/ --work-tree=$HOME add \
 ~/.config/qtile/config.py \
 ~/.config/rofi/* \
 ~/.config/yt-dlp/config \
+~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml \
+~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml \
 ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml \
 ~/.config/easyeffects/autoload/output/* \
 ~/.config/easyeffects/output/* \
