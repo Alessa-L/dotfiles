@@ -112,6 +112,7 @@ git --git-dir=$HOME/Linux/dotfiles --work-tree=$HOME pull https://github.com/Ale
 sudo cp $HOME/Linux/slick-greeter.conf /etc/lightdm/
 sudo cp $HOME/Media/Images/Wallpaper.jpg /usr/share/backgrounds/
 sudo cp $HOME/Linux/disable_usb_wakeup.conf /etc/tmpfiles.d/disable_usb_wakeup.conf
+sudo cp $HOME/Linux/code.desktop /usr/share/applications/code.desktop
 
 # Set the xfce/qtile session
 xfconf-query -c xfce4-session -p /sessions/Failsafe/Client0_Command -t string -sa xfsettingsd

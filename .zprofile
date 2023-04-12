@@ -7,4 +7,4 @@ export SAVEHIST="1000"
 # Home cleanup
 export PYTHONSTARTUP="$HOME/.config/python/pythonrc"
 export LESSHISTFILE="-"
-
+export __GL_SHADER_DISK_CACHE_PATH="$HOME/.config/nvidia"

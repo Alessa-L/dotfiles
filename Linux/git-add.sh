@@ -31,4 +31,5 @@ git --git-dir=$HOME/Linux/dotfiles/ --work-tree=$HOME add \
 ~/.local/share/fonts/* \
 ~/.local/share/themes/* \
 ~/.config/Code/User/settings.json \
+~/Linux/code.desktop \
 ~/Linux/disable_usb_wakeup.conf
