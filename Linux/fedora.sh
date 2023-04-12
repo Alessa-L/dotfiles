@@ -79,7 +79,8 @@ sudo dnf install -y \
 	flatpak \
 	discord \
 	xdg-user-dirs \
-	PackageKit-command-not-found
+	PackageKit-command-not-found \
+	dnf-automatic
 
 # Install Qtile
 sudo dnf install -y \
