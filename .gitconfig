@@ -4,5 +4,6 @@
 [core]
 	editor = nvim
 	pager = less -F
+	sshCommand = ssh -i /home/alessa/.config/ssh/alessa_ed25519
 [init]
     defaultBranch = main
