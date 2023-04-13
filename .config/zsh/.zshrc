@@ -16,6 +16,7 @@ alias "ssh"="export TERM=xterm && ssh"
 alias "vi"="nvim"
 alias "ls"="ls -lA"
 alias "dotfiles"="git --git-dir=$HOME/Linux/dotfiles/ --work-tree=$HOME"
+alias "code"="code --extensions-dir=.config/Code/Extensions"
 
 source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
