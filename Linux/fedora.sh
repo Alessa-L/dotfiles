@@ -37,7 +37,6 @@ sudo dnf install -y \
 	gnome-keyring \
 	pavucontrol \
 	pulseaudio-utils \
-	network-manager-applet \
 	polybar \
 	picom \
 	rofi \
@@ -130,6 +129,6 @@ sudo chsh -s /bin/zsh
 
 # Remove unnecessary files from $HOME
 ls -a | grep bash | xargs -d "\n" rm
-rm -frd .git dotfiles .wget-hsts .lesshst .python_history
+rm -frd .wget-hsts .lesshst .python_history
 
 sudo systemctl set-default graphical.target
