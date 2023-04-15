@@ -8,7 +8,6 @@ sudo dnf group install -y --with-optional \
 	virtualization \
 	standard \
 	hardware-support \
-	fonts \
 	c-development \
 	base-x \
 	multimedia
@@ -66,6 +65,7 @@ sudo dnf install -y \
 	gparted \
 	calibre \
 	rust \
+	rust-src \
 	cargo \
 	xfce4-session \
 	xfce4-settings \

@@ -8,5 +8,7 @@
     <property name="show-tray-icon" type="empty"/>
     <property name="logind-handle-lid-switch" type="empty"/>
     <property name="battery-button-action" type="uint" value="1"/>
+    <property name="dpms-enabled" type="bool" value="false"/>
+    <property name="blank-on-ac" type="int" value="0"/>
   </property>
 </channel>
