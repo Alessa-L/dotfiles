@@ -72,13 +72,12 @@ sudo dnf install -y \
 	xfconf \
 	xfce4-power-manager \
 	xfce4-notifyd \
-	zsh \
-	zsh-syntax-highlighting \
 	neovim \
 	flatpak \
 	discord \
 	xdg-user-dirs \
 	PackageKit-command-not-found \
+	fish \
 	dnf-automatic
 
 # Install Qtile
@@ -92,11 +91,10 @@ pip install qtile
 # Install AppImages
 wget -P $HOME/.local/bin/ https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage
 wget -P $HOME/.local/bin/ https://github.com/FreeTubeApp/FreeTube/releases/download/v0.18.0-beta/FreeTube_0.18.0_amd64.AppImage
-wget -P $HOME/.local/bin/ https://github.com/bitwarden/clients/releases/download/desktop-v2023.3.2/Bitwarden-2023.3.2-x86_64.AppImage
 
 # Add flathub and install flatpaks
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-sudo flatpak install -y signal
+sudo flatpak install -y signal bitwarden
 
 # Install VScode
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -123,9 +121,8 @@ xfconf-query -c xfce4-session -p /sessions/Failsafe/Client3_Command -t string -s
 # Set nemo to use alacritty as its terminal
 gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 
-# Change shell to ZSH
-chsh -s /bin/zsh
-sudo chsh -s /bin/zsh
+# Change shell to FISH
+chsh -s /bin/fish
 
 # Remove unnecessary files from $HOME
 ls -a | grep bash | xargs -d "\n" rm

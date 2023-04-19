@@ -1,6 +1,6 @@
 git --git-dir=$HOME/Linux/dotfiles/ --work-tree=$HOME add \
-~/.zprofile \
-~/.config/zsh/.zshrc \
+~/.config/fish/config.fish \
+~/.config/fish/fish_variables \
 ~/.config/python/pythonrc \
 ~/.config/user-dirs.dirs \
 ~/.gitconfig \
