@@ -1,4 +1,4 @@
-fish_add_path -p $Home/.local/bin
+fish_add_path -gp $HOME/.local/bin
 
 set -gx EDITOR /usr/bin/nvim
 
