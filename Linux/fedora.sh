@@ -112,6 +112,10 @@ sudo cp $HOME/Media/Images/Wallpaper.jpg /usr/share/backgrounds/
 sudo cp $HOME/Linux/disable_usb_wakeup.conf /etc/tmpfiles.d/disable_usb_wakeup.conf
 sudo cp $HOME/Linux/code.desktop /usr/share/applications/code.desktop
 
+# Setup dnf auto-updates
+sudo systemctl enable dnf-automatic-install.timer
+sudo systemctl start dnf-automatic-install.timer
+
 # Set the xfce/qtile session
 xfconf-query -c xfce4-session -p /sessions/Failsafe/Client0_Command -t string -sa xfsettingsd
 xfconf-query -c xfce4-session -p /sessions/Failsafe/Client1_Command -t string -s qtile -t string -s start
