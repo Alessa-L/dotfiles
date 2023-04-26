@@ -58,6 +58,7 @@ sudo dnf install -y \
 	ncmpcpp \
 	htop \
 	libreoffice-gtk3 \
+	libreoffice-langpack-pt-BR \
 	libreoffice-writer \
 	git \
 	papirus-icon-theme \
@@ -78,7 +79,9 @@ sudo dnf install -y \
 	xdg-user-dirs \
 	PackageKit-command-not-found \
 	fish \
-	dnf-automatic
+	dnf-automatic \
+	wpa_supplicant \
+	NetworkManager-wifi
 
 # Install Qtile
 sudo dnf install -y \
@@ -101,6 +104,10 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 dnf check-update
 sudo dnf install -y code
+code --extensions-dir=.config/Code/Extensions --install-extension fabiospampinato.vscode-monokai-night
+code --extensions-dir=.config/Code/Extensions --install-extension ms-vscode.cpptools
+code --extensions-dir=.config/Code/Extensions --install-extension rust-lang.rust-analyzer
+code --extensions-dir=.config/Code/Extensions --install-extension vadimcn.vscode-lldb
 
 # Install my configurations
 mkdir $HOME/Linux
@@ -111,10 +118,6 @@ sudo cp $HOME/Linux/slick-greeter.conf /etc/lightdm/
 sudo cp $HOME/Media/Images/Wallpaper.jpg /usr/share/backgrounds/
 sudo cp $HOME/Linux/disable_usb_wakeup.conf /etc/tmpfiles.d/disable_usb_wakeup.conf
 sudo cp $HOME/Linux/code.desktop /usr/share/applications/code.desktop
-code --extensions-dir=.config/Code/Extensions --install-extension fabiospampinato.vscode-monokai-night
-code --extensions-dir=.config/Code/Extensions --install-extension ms-vscode.cpptools
-code --extensions-dir=.config/Code/Extensions --install-extension rust-lang.rust-analyzer
-code --extensions-dir=.config/Code/Extensions --install-extension vadimcn.vscode-lldb
 
 # Setup dnf auto-updates
 sudo systemctl enable dnf-automatic-install.timer
