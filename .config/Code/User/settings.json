@@ -3,5 +3,6 @@
     "editor.fontWeight": "500",
     "editor.fontLigatures": true,
     "workbench.colorTheme": "Monokai Night",
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "vim.enableNeovim": true
 }

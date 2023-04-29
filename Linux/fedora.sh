@@ -108,6 +108,20 @@ code --extensions-dir=.config/Code/Extensions --install-extension fabiospampinat
 code --extensions-dir=.config/Code/Extensions --install-extension ms-vscode.cpptools
 code --extensions-dir=.config/Code/Extensions --install-extension rust-lang.rust-analyzer
 code --extensions-dir=.config/Code/Extensions --install-extension vadimcn.vscode-lldb
+code --extensions-dir=.config/Code/Extensions --install-extension aaron-bond.better-comments
+code --extensions-dir=.config/Code/Extensions --install-extension vscodevim.vim 
+code --extensions-dir=.config/Code/Extensions --install-extension streetsidesoftware.code-spell-checker
+code --extensions-dir=.config/Code/Extensions --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
+code --extensions-dir=.config/Code/Extensions --install-extension Gruntfuggly.todo-tree
+
+while true; do
+    read -p "Do you wish to instal remote development extensions" yn
+    case $yn in
+        [Yy]* ) code --extensions-dir=.config/Code/Extensions --install-extension ms-vscode-remote.remote-ssh; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 
 # Install my configurations
 mkdir $HOME/Linux
