@@ -2,7 +2,7 @@
     "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontWeight": "500",
     "editor.fontLigatures": true,
-    "workbench.colorTheme": "Tomorrow Night Eighties",
+    "workbench.colorTheme": "Monokai Night",
     "diffEditor.ignoreTrimWhitespace": false,
     "vim.enableNeovim": true
 }
