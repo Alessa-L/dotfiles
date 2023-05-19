@@ -4,5 +4,6 @@
     "editor.fontLigatures": true,
     "workbench.colorTheme": "Monokai Night",
     "diffEditor.ignoreTrimWhitespace": false,
-    "vim.enableNeovim": true
+    "vim.enableNeovim": true,
+    "vim.useSystemClipboard": true
 }
