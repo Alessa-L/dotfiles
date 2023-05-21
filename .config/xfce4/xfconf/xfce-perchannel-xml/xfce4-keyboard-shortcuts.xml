@@ -54,7 +54,7 @@
       <property name="&lt;Alt&gt;m" type="string" value="/home/alessa/.local/scripts/mute_mic.sh"/>
       <property name="AudioRaiseVolume" type="string" value="/home/alessa/.local/scripts/volume.sh + 5%"/>
       <property name="AudioLowerVolume" type="string" value="/home/alessa/.local/scripts/volume.sh - 5%"/>
-      <property name="&lt;Shift&gt;ISO_Left_Tab" type="string" value="/home/alessa/.local/scripts/sink.sh"/>
+      <property name="&lt;Shift&gt;&lt;Alt&gt;m" type="string" value="/home/alessa/.local/scripts/sink.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

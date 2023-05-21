@@ -21,7 +21,7 @@ if status is-interactive
 
     alias "journalctl-error"="sudo journalctl -q -x -p err"
     alias "history"="history | less"
-    alias "ssh"="export TERM=xterm && ssh"
+    alias "ssh"="export TERM=xterm && ssh -i $HOME/.local/ssh/alessa_ed25519"
     alias "vi"="nvim"
     alias "ls"="ls -lA --group-directories-first --color=always"
     alias "dotfiles"="git --git-dir=$HOME/Linux/dotfiles/ --work-tree=$HOME"
