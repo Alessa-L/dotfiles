@@ -6,5 +6,9 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "vim.enableNeovim": true,
     "vim.useSystemClipboard": true,
-    "editor.lineHeight": 22
+    "editor.lineHeight": 22,
+    "vim.neovimPath": "/usr/bin/nvim",
+    "vim.neovimUseConfigFile": true,
+    "cSpell.language": "en, pt, pt_BR",
+    "extensions.ignoreRecommendations": true
 }
