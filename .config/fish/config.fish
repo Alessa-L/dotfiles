@@ -24,5 +24,5 @@ if status is-interactive
     alias "vi"="nvim"
     alias "ls"="ls -lA --group-directories-first --color=always"
     alias "dotfiles"="git --git-dir=$HOME/Linux/dotfiles/ --work-tree=$HOME"
-    alias "code"="code --extensions-dir=.config/Code/Extensions"
+    alias "code"="code --extensions-dir=$HOME/.config/Code/Extensions"
 end

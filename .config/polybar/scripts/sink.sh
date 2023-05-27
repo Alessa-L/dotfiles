@@ -1,1 +1,1 @@
-/home/elise/.local/scripts/sink.sh
+/home/alessa/.local/scripts/sink.sh
