@@ -113,6 +113,7 @@ code --extensions-dir=.config/Code/Extensions --install-extension vscodevim.vim
 code --extensions-dir=.config/Code/Extensions --install-extension streetsidesoftware.code-spell-checker
 code --extensions-dir=.config/Code/Extensions --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
 code --extensions-dir=.config/Code/Extensions --install-extension Gruntfuggly.todo-tree
+code --extensions-dir=.config/Code/Extensions --install-extension eamodio.gitlens
 
 while true; do
     read -p "Do you wish to instal remote development extensions" yn
