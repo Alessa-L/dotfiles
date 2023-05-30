@@ -10,5 +10,6 @@
     "vim.neovimPath": "/usr/bin/nvim",
     "vim.neovimUseConfigFile": true,
     "cSpell.language": "en, pt, pt_BR",
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "git.autofetch": true
 }

@@ -124,6 +124,11 @@ while true; do
     esac
 done
 
+# Install docker
+sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf install docker-ce docker-ce-cli containerd.io
+sudo systemctl enable docker
+
 # Install my configurations
 mkdir $HOME/Linux
 git --git-dir=$HOME/Linux/dotfiles --work-tree=$HOME init

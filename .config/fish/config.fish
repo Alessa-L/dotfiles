@@ -1,4 +1,5 @@
 fish_add_path -gp $HOME/.local/bin
+fish_add_path -gp $HOME/.config/cargo/bin
 
 set -gx EDITOR /usr/bin/nvim
 
