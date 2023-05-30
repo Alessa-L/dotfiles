@@ -1,5 +1,5 @@
 fish_add_path -gp $HOME/.local/bin
-fish_add_path -gp $HOME/.config/cargo/bin
+fish_add_path -gp $HOME/.local/rust/cargo/bin
 
 set -gx EDITOR /usr/bin/nvim
 
@@ -8,7 +8,9 @@ set -gx PYTHONSTARTUP $HOME/.config/python/pythonrc
 set -gx LESSHISTFILE 
 set -gx __GL_SHADER_DISK_CACHE_PATH $HOME/.config/nvidia
 set -gx GNUPGHOME $HOME/.config/gnupg
-set -gx CARGO_HOME $HOME/.config/cargo
+set -gx RUSTUP_HOME $HOME/.local/rust/rustup/
+set -gx CARGO_HOME $HOME/.local/rust/cargo/
+set -gx DOCKER_HOST unix:///run/user/1000/docker.sock
 
 if status is-interactive
     # Commands to run in interactive sessions can go here

@@ -65,9 +65,6 @@ sudo dnf install -y \
 	openssh-server \
 	gparted \
 	calibre \
-	rust \
-	rust-src \
-	cargo \
 	xfce4-session \
 	xfce4-settings \
 	xfconf \
@@ -82,6 +79,9 @@ sudo dnf install -y \
 	dnf-automatic \
 	wpa_supplicant \
 	NetworkManager-wifi
+
+# Install Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Install Qtile
 sudo dnf install -y \
@@ -128,6 +128,7 @@ done
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 sudo dnf install docker-ce docker-ce-cli containerd.io
 sudo systemctl enable docker
+dockerd-rootless-setuptool.sh install --skip-iptables
 
 # Install my configurations
 mkdir $HOME/Linux
