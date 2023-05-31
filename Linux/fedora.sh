@@ -80,8 +80,9 @@ sudo dnf install -y \
 	wpa_supplicant \
 	NetworkManager-wifi
 
-# Install Rust
+# Install Rust and Cross (Tool to easily cross-compile rust code via docker)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install cross 
 
 # Install Qtile
 sudo dnf install -y \
