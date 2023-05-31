@@ -10,7 +10,7 @@ set -gx __GL_SHADER_DISK_CACHE_PATH $HOME/.config/nvidia
 set -gx GNUPGHOME $HOME/.config/gnupg
 set -gx RUSTUP_HOME $HOME/.local/rust/rustup
 set -gx CARGO_HOME $HOME/.local/rust/cargo
-set -gx DOCKER_HOST unix:///run/user/1000/docker.sock
+set -gx CROSS_ROOTLESS_CONTAINER_ENGINE 1
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
