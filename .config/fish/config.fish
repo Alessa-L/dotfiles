@@ -28,4 +28,5 @@ if status is-interactive
     alias "ls"="ls -lA --group-directories-first --color=always"
     alias "dotfiles"="git --git-dir=$HOME/Linux/dotfiles/ --work-tree=$HOME"
     alias "code"="code --extensions-dir=$HOME/.config/Code/Extensions"
+    alias "cross-windows"="cross build --target x86_64-pc-windows-gnu"
 end
