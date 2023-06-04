@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Minecraft
+Comment=
+Exec=/home/alessa/Minecraft/MultiMC/MultiMC
+Icon=multimc
+Path=/home/alessa/Minecraft/MultiMC
+Terminal=false
+StartupNotify=false

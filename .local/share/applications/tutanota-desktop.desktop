@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Tutanota Desktop
+Comment=The desktop client for Tutanota, the secure e-mail service.
+GenericName=Mail Client
+Keywords=Email;E-mail
+Exec="/home/alessa/.local/bin/tutanota-desktop-linux.AppImage" %U
+Terminal=false
+Type=Application
+Icon=tutanota-desktop.png
+StartupWMClass=tutanota-desktop
+MimeType=x-scheme-handler/mailto;
+Categories=Network;
+X-Tutanota-Version=3.112.15
+TryExec=/home/alessa/.local/bin/tutanota-desktop-linux.AppImage

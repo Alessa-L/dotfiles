@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Music Player
+Comment=Ncmpcpp
+Exec=/home/alessa/.local/scripts/music-player.sh
+Icon=apple-music
+Path=
+Terminal=false
+StartupNotify=false

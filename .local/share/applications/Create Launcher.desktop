@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Create Launcher
+Comment=
+Exec=exo-desktop-item-edit --create-new --type Application .local/share/applications/
+Icon=application-default-icon
+Path=
+Terminal=false
+StartupNotify=false

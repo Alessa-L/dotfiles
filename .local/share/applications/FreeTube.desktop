@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=FreeTube
+Comment=
+Exec=/home/alessa/.local/bin/freetube.AppImage
+Icon=freetube
+Path=/home/alessa/.local/bin/
+Terminal=false
+StartupNotify=false
