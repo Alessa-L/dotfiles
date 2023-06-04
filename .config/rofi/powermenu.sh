@@ -15,7 +15,7 @@ suspend=" : Suspend Session"
 logout=" : Logout of Session"
 
 # Variable passed to rofi
-options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
+options="$suspend \n$shutdown \n$reboot \n$lock \n$logout"
 chosen="$(echo -e "$options" | $rofi_command -dmenu)"
 case $chosen in
     $shutdown)
