@@ -11,5 +11,5 @@
     "vim.neovimUseConfigFile": true,
     "cSpell.language": "en, pt, pt_BR",
     "extensions.ignoreRecommendations": true,
-    "git.autofetch": true
+    "git.autofetch": true,
 }
