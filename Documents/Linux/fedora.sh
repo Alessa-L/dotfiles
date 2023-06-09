@@ -115,6 +115,7 @@ code --extensions-dir=.config/Code/Extensions --install-extension streetsidesoft
 code --extensions-dir=.config/Code/Extensions --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
 code --extensions-dir=.config/Code/Extensions --install-extension Gruntfuggly.todo-tree
 code --extensions-dir=.config/Code/Extensions --install-extension eamodio.gitlens
+code --extensions-dir=.config/Code/Extensions --install-extension platformio.platformio-ide
 
 while true; do
     read -p "Do you wish to instal remote development extensions" yn

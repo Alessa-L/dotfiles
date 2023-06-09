@@ -2,6 +2,7 @@ fish_add_path -gp $HOME/.local/bin
 fish_add_path -gp $HOME/.local/rust/cargo/bin
 
 set -gx EDITOR /usr/bin/nvim
+set -gx CROSS_ROOTLESS_CONTAINER_ENGINE 1
 
 # Home cleanup
 set -gx PYTHONSTARTUP $HOME/.config/python/pythonrc
@@ -10,7 +11,8 @@ set -gx __GL_SHADER_DISK_CACHE_PATH $HOME/.config/nvidia
 set -gx GNUPGHOME $HOME/.config/gnupg
 set -gx RUSTUP_HOME $HOME/.local/rust/rustup
 set -gx CARGO_HOME $HOME/.local/rust/cargo
-set -gx CROSS_ROOTLESS_CONTAINER_ENGINE 1
+set -gx PLATFORMIO_CORE_DIR $HOME/.local/platformio
+set -gx DOCKER_CONFIG $HOME/.local/docker
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
