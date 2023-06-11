@@ -152,8 +152,9 @@ xfconf-query -c xfce4-session -p /sessions/Failsafe/Client1_Command -t string -s
 xfconf-query -c xfce4-session -p /sessions/Failsafe/Client2_Command -t string -s picom -t string -s -b
 xfconf-query -c xfce4-session -p /sessions/Failsafe/Client3_Command -t string -sa polybar
 
-# Set nemo to use alacritty as its terminal
+# Set nemo to use alacritty as its terminal and stop trying to draw icons on desktop (crash bug?)
 gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
+gsettings set org.nemo.desktop show-desktop-icons false
 
 # Change shell to FISH
 chsh -s /bin/fish

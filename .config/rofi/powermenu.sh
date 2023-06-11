@@ -18,6 +18,9 @@ logout=" : Logout of Session"
 options="$suspend \n$shutdown \n$reboot \n$lock \n$logout"
 chosen="$(echo -e "$options" | $rofi_command -dmenu)"
 case $chosen in
+    $suspend)
+		xfce4-session-logout --suspend
+        ;;
     $shutdown)
 		systemctl poweroff
         ;;
@@ -27,10 +30,8 @@ case $chosen in
     $lock)
 		dm-tool lock
         ;;
-    $suspend)
-		xfce4-session-logout --suspend
-        ;;
     $logout)
 		xfce4-session-logout --logout --fast
         ;;
 esac
+

@@ -25,6 +25,7 @@ if status is-interactive
     set fish_cursor_replace_one line
 
     alias "journalctl-error"="sudo journalctl -q -x -p err"
+    alias "journalctl-last"="sudo journalctl -xb 0 -p err"
     alias "history"="history | less"
     alias "vi"="nvim"
     alias "ls"="ls -lA --group-directories-first --color=always"
