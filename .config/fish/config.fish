@@ -29,7 +29,8 @@ if status is-interactive
     alias "history"="history | less"
     alias "vi"="nvim"
     alias "ls"="ls -lA --group-directories-first --color=always"
-    alias "dotfiles"="git --git-dir=$HOME/Documents/Linux/dotfiles/ --work-tree=$HOME"
+    alias "dotfiles"="git --git-dir=$HOME/Documents/Linux/dotfiles --work-tree=$HOME"
     alias "code"="code --extensions-dir=$HOME/.config/Code/Extensions"
-    alias "cross-windows"="cross build --target x86_64-pc-windows-gnu"
+    alias "cargo"="cross"
+    alias "cargo-windows"="cross build --target x86_64-pc-windows-gnu --verbose"
 end
