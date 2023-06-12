@@ -1,6 +1,6 @@
 fish_add_path -gp $HOME/.local/bin
 fish_add_path -gp $HOME/.local/rust/cargo/bin
-a
+
 set -gx EDITOR /usr/bin/nvim
 set -gx CROSS_ROOTLESS_CONTAINER_ENGINE 1
 
