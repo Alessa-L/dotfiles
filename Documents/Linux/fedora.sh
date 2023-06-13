@@ -47,8 +47,7 @@ sudo dnf install -y \
 	uget \
 	eom \
 	xfce4-screenshooter \
-	nemo \
-	nemo-fileroller \
+	pcmanfm \
 	file-roller \
 	celluloid \
 	mpv \

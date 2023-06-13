@@ -13,6 +13,7 @@ set -gx RUSTUP_HOME $HOME/.local/rust/rustup
 set -gx CARGO_HOME $HOME/.local/rust/cargo
 set -gx PLATFORMIO_CORE_DIR $HOME/.local/platformio
 set -gx DOCKER_CONFIG $HOME/.local/docker
+set -gx XARGO_HOME $HOME/.local/rust/xargo
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
