@@ -142,6 +142,8 @@ git --git-dir=$HOME/Documents/Linux/dotfiles --work-tree=$HOME pull https://gith
 sudo cp $HOME/Documents/Linux/slick-greeter.conf /etc/lightdm/
 sudo cp $HOME/Media/Images/Wallpaper.jpg /usr/share/backgrounds/
 sudo cp $HOME/Documents/Linux/disable_usb_wakeup.conf /etc/tmpfiles.d/disable_usb_wakeup.conf
+wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
+papirus-folders -C white --theme Papirus-Dark
 
 # Setup dnf auto-updates
 sudo systemctl enable dnf-automatic-install.timer
