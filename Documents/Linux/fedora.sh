@@ -77,7 +77,8 @@ sudo dnf install -y \
 	fish \
 	dnf-automatic \
 	wpa_supplicant \
-	NetworkManager-wifi
+	NetworkManager-wifi \
+	blueman
 
 # Install Rust and Cross (Tool to easily cross-compile rust code via docker)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
