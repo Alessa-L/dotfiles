@@ -41,7 +41,6 @@ sudo dnf install -y \
 	rofi \
 	alacritty \
 	easyeffects \
-	firefox \
 	torbrowser-launcher \
 	deluge \
 	uget \
@@ -99,6 +98,8 @@ wget -P $HOME/.local/bin/ https://github.com/FreeTubeApp/FreeTube/releases/downl
 # Add flathub and install flatpaks
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install -y signal bitwarden
+sudo flatpak install -y flathub org.mozilla.firefox
+sudo flatpak override --filesystem=xdg-data/themes
 
 # Install VScode
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
