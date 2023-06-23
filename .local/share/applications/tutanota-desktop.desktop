@@ -10,5 +10,5 @@ Icon=tutanota-desktop.png
 StartupWMClass=tutanota-desktop
 MimeType=x-scheme-handler/mailto;
 Categories=Network;
-X-Tutanota-Version=3.113.3
+X-Tutanota-Version=3.114.1
 TryExec=/home/alessa/.local/bin/tutanota-desktop-linux.AppImage

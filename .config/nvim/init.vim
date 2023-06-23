@@ -1,3 +1,8 @@
+call plug#begin('$HOME/.config/nvim/plugins')
+Plug 'crusoexia/vim-monokai'
+call plug#end()
+
+colorscheme monokai
 set clipboard=unnamedplus
 set number
 set relativenumber

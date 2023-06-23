@@ -12,4 +12,6 @@
     "cSpell.language": "en, pt, pt_BR",
     "extensions.ignoreRecommendations": true,
     "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
 }
