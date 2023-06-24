@@ -75,7 +75,6 @@ sudo dnf install -y \
 	xdg-user-dirs \
 	PackageKit-command-not-found \
 	fish \
-	dnf-automatic \
 	wpa_supplicant \
 	NetworkManager-wifi \
 	blueman
@@ -149,10 +148,6 @@ sudo cp $HOME/Documents/Linux/sshd_config.d/01-local.conf /etc/ssh/sshd_config.d
 sudo cp $HOME/Documents/Linux/ssh_config.d/01-local.conf /etc/ssh/ssh_config.d/
 wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
 papirus-folders -C white --theme Papirus-Dark
-
-# Setup dnf auto-updates
-sudo systemctl enable dnf-automatic-install.timer
-sudo systemctl start dnf-automatic-install.timer
 
 # Set the xfce/qtile session
 xfconf-query -c xfce4-session -p /sessions/Failsafe/Client0_Command -t string -sa xfsettingsd
