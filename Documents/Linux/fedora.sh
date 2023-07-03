@@ -47,6 +47,7 @@ sudo dnf install -y \
 	eom \
 	xfce4-screenshooter \
 	pcmanfm \
+    gvfs-mtp \
     lxmenu-data \
 	file-roller \
 	celluloid \

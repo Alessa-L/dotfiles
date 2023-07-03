@@ -45,7 +45,6 @@
       <property name="&lt;Primary&gt;space" type="string" value="rofi -show drun"/>
       <property name="&lt;Alt&gt;Return" type="string" value="/usr/bin/alacritty"/>
       <property name="AudioMute" type="string" value="pactl set-sink-mute @DEFAULT_SINK@ toggle"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="alacritty -e htop"/>
       <property name="Print" type="string" value="xfce4-screenshooter -w --no-border -s Media/Images/Screenshots/"/>
       <property name="&lt;Primary&gt;Print" type="string" value="xfce4-screenshooter -f -s Media/Images/Screenshots/"/>
       <property name="&lt;Alt&gt;Tab" type="string" value="rofi -show window"/>
@@ -55,6 +54,7 @@
       <property name="AudioRaiseVolume" type="string" value="/home/alessa/.local/scripts/volume.sh + 5%"/>
       <property name="AudioLowerVolume" type="string" value="/home/alessa/.local/scripts/volume.sh - 5%"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;m" type="string" value="/home/alessa/.local/scripts/sink.sh"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="alacritty -e htop -u alessa"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
